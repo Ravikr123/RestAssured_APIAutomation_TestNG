@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6661" started-at="2020-05-10T13:50:20Z" finished-at="2020-05-10T13:50:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6661" started-at="2020-05-10T13:50:20Z" finished-at="2020-05-10T13:50:27Z">
+      <class name="com.dell.WebServiceTestScenario.TC008_Sc008_DDTTest_CreateNewEmp">
+        <test-method status="PASS" signature="addNewEmp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.dell.WebServiceTestScenario.TC008_Sc008_DDTTest_CreateNewEmp@43bd930a]" name="addNewEmp" duration-ms="4890" started-at="2020-05-10T13:50:20Z" data-provider="EmpDataProvider" finished-at="2020-05-10T13:50:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmp -->
+        <test-method status="PASS" signature="addNewEmp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.dell.WebServiceTestScenario.TC008_Sc008_DDTTest_CreateNewEmp@43bd930a]" name="addNewEmp" duration-ms="873" started-at="2020-05-10T13:50:25Z" data-provider="EmpDataProvider" finished-at="2020-05-10T13:50:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram124]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2180]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[31]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmp -->
+        <test-method status="PASS" signature="addNewEmp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.dell.WebServiceTestScenario.TC008_Sc008_DDTTest_CreateNewEmp@43bd930a]" name="addNewEmp" duration-ms="864" started-at="2020-05-10T13:50:26Z" data-provider="EmpDataProvider" finished-at="2020-05-10T13:50:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram125]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2190]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmp -->
+      </class> <!-- com.dell.WebServiceTestScenario.TC008_Sc008_DDTTest_CreateNewEmp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
