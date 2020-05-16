@@ -1,4 +1,4 @@
-package com.dell.WebServiceTestScenario;
+package com.test.WebServiceTestScenario;
 
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;

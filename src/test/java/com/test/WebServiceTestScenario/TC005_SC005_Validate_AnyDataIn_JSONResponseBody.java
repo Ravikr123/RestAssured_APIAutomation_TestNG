@@ -1,4 +1,4 @@
-package com.dell.WebServiceTestScenario;
+package com.test.WebServiceTestScenario;
 
 import org.apache.xerces.util.SynchronizedSymbolTable;
 import org.testng.annotations.Test;
