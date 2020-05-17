@@ -1,10 +1,13 @@
 package com.test.WebServiceTestScenario;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.json.simple.JSONObject;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.test.Utilities.ExcelUtility;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -13,7 +16,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import junit.framework.Assert;
 
-public class TC008_Sc008_DDTTest_CreateNewEmp {
+public class TC008_SC008_DDTTest_CreateNewEmp {
 	
 	@Test(dataProvider="EmpDataProvider")
 	public void addNewEmp(String name, String sal, String age) {
@@ -52,13 +55,27 @@ public class TC008_Sc008_DDTTest_CreateNewEmp {
 	}
 	
 	@DataProvider(name="EmpDataProvider")
-	public String[][] getEmpDetail() {
-		String empdata[][] = { 
+	public String[][] getEmpDetail() throws IOException {
+		
+		String excel_dataPath = System.getProperty("user.dir")+"/empdata.xlsx";
+		int rowNum = ExcelUtility.getRowCount(excel_dataPath, "AddEmpData");
+		int columnNum = ExcelUtility.getCellCount(excel_dataPath, "AddEmpData", 1);
+		
+		String empdata[][] = new String[rowNum][columnNum];
+		for(int i=1;i<=rowNum;i++)
+		{
+			for(int j=0;j<columnNum;j++)
+			{
+				empdata[i-1][j] = ExcelUtility.getCellData(excel_dataPath, "AddEmpData", i, j);
+			}
+		}
+		
+/*		String empdata[][] = { 
 								{"ram123","2100","21"},
 								{"ram124","2180","31"},
 								{"ram125","2190","51"}
 							};
-		return empdata;
+		return empdata;*/
 		}
 
 }
