@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dell.WebServiceTestScenario.TC008_Sc008_DDTTest_CreateNewEmp">
+      <class name="com.test.WebServiceTestScenario.TC0010_SC0010_GetSingleEmployeeData">
         <methods>
-          <include name="addNewEmp"/>
+          <include name="verify_responseBody"/>
+          <include name="setUp"/>
+          <include name="verify_ResponseCode"/>
+          <include name="getSingle_Employee"/>
         </methods>
-      </class> <!-- com.dell.WebServiceTestScenario.TC008_Sc008_DDTTest_CreateNewEmp -->
+      </class> <!-- com.test.WebServiceTestScenario.TC0010_SC0010_GetSingleEmployeeData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
