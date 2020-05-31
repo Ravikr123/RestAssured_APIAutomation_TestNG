@@ -69,6 +69,7 @@ public class TC008_SC008_DDTTest_CreateNewEmp {
 				empdata[i-1][j] = ExcelUtility.getCellData(excel_dataPath, "AddEmpData", i, j);
 			}
 		}
+		return empdata;
 		
 /*		String empdata[][] = { 
 								{"ram123","2100","21"},

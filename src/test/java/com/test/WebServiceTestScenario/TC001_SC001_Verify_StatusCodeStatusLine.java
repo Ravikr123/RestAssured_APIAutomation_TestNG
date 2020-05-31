@@ -7,8 +7,9 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import junit.framework.Assert;
+import com.test.Base.*;
 
-public class TC001_SC001_Verify_StatusCodeStatusLine {
+public class TC001_SC001_Verify_StatusCodeStatusLine extends TestBase {
 	
 	@Test
 	public void getWeather_Details() {
